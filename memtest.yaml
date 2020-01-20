@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: memtest
+  name: memtest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: memtest
+  template:
+    metadata:
+      labels:
+        app: memtest
+    spec:
+      containers:
+      - image: suranc/malloctest:3
+        name: malloctest
+        resources:
+          limits:
+            cpu:     200
+            memory:  10000Gi
+          requests:
+            cpu:     1
+            #memory:  2931952Ki
+            memory:  2435806Ki
+            #memory: 2Gi
