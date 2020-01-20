@@ -11,13 +11,10 @@ int main() {
     else
     {
         for (int i = 0; i < usage; i++) {
-            //fprintf(stdout, "Appending address to %d byte of allocated memory\n", i);
             *(array + i) = i*2;
         }
 
-        static int testaddr = 623566335;
-        fprintf(stdout, "Contents of address: %d = %d\n", testaddr, array[testaddr]);
-        fprintf(stdout, "size of int: %d\n", sizeof(int));
+        fprintf(stdout, "Size of allocated memory: %u\n", usage*sizeof(int));
 
         sleep(100000);
     }
