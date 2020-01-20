@@ -15,7 +15,7 @@ spec:
         app: memtest
     spec:
       containers:
-      - image: suranc/malloctest:3
+      - image: suranc/malloctest:ibm-maxmalloc
         name: malloctest
         resources:
           limits:

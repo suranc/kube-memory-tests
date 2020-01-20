@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main() {
-    static int usage = 805306368;
+    static int usage = 623566336;
     int *array = malloc(usage * sizeof(int));
     if (array == NULL) {
         fprintf(stderr, "malloc failed\n");
@@ -15,7 +15,7 @@ int main() {
             *(array + i) = i*2;
         }
 
-        static int testaddr = 805306367;
+        static int testaddr = 623566335;
         fprintf(stdout, "Contents of address: %d = %d\n", testaddr, array[testaddr]);
         fprintf(stdout, "size of int: %d\n", sizeof(int));
 
