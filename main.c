@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main() {
-    static int usage = 620000000;
+    static int usage = 620500000;
     int *array = malloc(usage * sizeof(int));
     if (array == NULL) {
         fprintf(stderr, "malloc failed\n");
@@ -14,7 +14,7 @@ int main() {
             *(array + i) = i*2;
         }
         fprintf(stdout, "Allocated %u bytes\n", (usage - 500000)*sizeof(int));
-        sleep(5);
+        sleep(50);
 
         *(array + (usage - 1)) = (usage - 1)*2;
 
