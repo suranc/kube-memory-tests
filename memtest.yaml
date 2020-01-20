@@ -26,5 +26,5 @@ spec:
           requests:
             cpu:     1
             #memory:  2931952Ki
-            memory:  2480M
+            memory:  248M
             #memory: 2Gi
