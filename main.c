@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main() {
-    static int usage = 700000000;
+    static int usage = 620000000;
     int *array = malloc(usage * sizeof(int));
     if (array == NULL) {
         fprintf(stderr, "malloc failed\n");

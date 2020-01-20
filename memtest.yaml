@@ -22,9 +22,9 @@ spec:
         resources:
           limits:
             cpu:     200
-            memory:  2800M
+            memory:  2480M
           requests:
             cpu:     1
             #memory:  2931952Ki
-            memory:  2800M
+            memory:  2480M
             #memory: 2Gi
