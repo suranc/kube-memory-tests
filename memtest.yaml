@@ -15,7 +15,7 @@ spec:
         app: memtest
     spec:
       containers:
-      - image: suranc/malloctest:ibm-maxmalloc
+      - image: suranc/malloctest:ibm-allocmalloc
         name: malloctest
         imagePullPolicy: Always
         tty: true
