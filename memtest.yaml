@@ -15,16 +15,16 @@ spec:
         app: memtest
     spec:
       containers:
-      - image: suranc/malloctest:ibm-overmalloc
+      - image: suranc/malloctest:ibm-brushl
         name: malloctest
         imagePullPolicy: Always
         tty: true
         resources:
           limits:
             cpu:     200
-            memory:  10000Gi
+            memory:  2800M
           requests:
             cpu:     1
             #memory:  2931952Ki
-            memory:  2435806Ki
+            memory:  2800M
             #memory: 2Gi
