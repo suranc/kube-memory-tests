@@ -15,7 +15,7 @@ int main() {
             *(array + i) = i*2;
         }
 
-        static int testaddr = 344;
+        static int testaddr = 999999999;
         fprintf(stdout, "Contents of address: %d = %d\n", testaddr, array[testaddr]);
         fprintf(stdout, "size of int: %d\n", sizeof(int));
 
